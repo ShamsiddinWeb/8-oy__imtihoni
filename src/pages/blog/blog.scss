@@ -1,0 +1,33 @@
+.blog__wrapper {
+  .blog__line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 15px;
+    margin-top: 200px;
+    a {
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.86px;
+      text-align: left;
+      color: #bab9b9;
+    }
+    p {
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.86px;
+      text-align: left;
+      color: #454545;
+    }
+  }
+  h1 {
+    font-family: Manrope;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+    color: #454545;
+  }
+}

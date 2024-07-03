@@ -1,0 +1,41 @@
+.lamps {
+  margin-bottom: 100px;
+  &__start {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    h1 {
+      font-family: Manrope;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 54.64px;
+      text-align: left;
+      color: #454545;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 640px;
+      p {
+        font-family: Manrope;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        color: #454545;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .lamps {
+    &__start {
+      flex-direction: column;
+      gap: 24px;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}

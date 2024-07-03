@@ -1,0 +1,315 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 111;
+  &__start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 20px 0;
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      a {
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.12px;
+        text-align: left;
+        color: #adadad;
+      }
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      &__text {
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.12px;
+        text-align: left;
+        color: #454545;
+      }
+      &__span {
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19.12px;
+        text-align: left;
+        color: #b9b9b9;
+      }
+    }
+  }
+  &__end {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    padding-bottom: 20px;
+    &-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      h2 {
+        font-family: Inter;
+        font-size: 29px;
+        font-weight: 400;
+        line-height: 35.1px;
+        text-align: left;
+        color: #454545;
+      }
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 18px 27px;
+      border-radius: 100px;
+      background-color: #454545;
+      color: #fff;
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-align: left;
+      border: none;
+      cursor: pointer;
+      svg {
+        font-size: 20px;
+      }
+    }
+    &-form {
+      display: flex;
+      align-items: center;
+      width: 626px;
+      border: 1px solid #454545;
+      border-radius: 100px;
+      padding: 17px 19px;
+      svg {
+        font-size: 25px;
+      }
+      &__inp {
+        flex: 1;
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.86px;
+        text-align: left;
+        color: #1c1b1b;
+        ::placeholder {
+          color: #e6dfdf;
+        }
+      }
+    }
+    &-card {
+      display: flex;
+      align-items: center;
+      gap: 31px;
+      &__favorites {
+        color: black;
+      }
+      &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        p {
+          font-family: Manrope;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 16.39px;
+          text-align: left;
+          color: #454545;
+        }
+        svg {
+          font-size: 25px;
+        }
+      }
+    }
+    &-catalog {
+      display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      display: none;
+      cursor: pointer;
+      p {
+        font-family: Manrope;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16.39px;
+        text-align: left;
+        color: #454545;
+      }
+      svg {
+        font-size: 25px;
+        margin-left: 6px;
+      }
+    }
+  }
+  &__menu {
+    height: 100%;
+
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    &-burgers {
+      display: none;
+      margin-left: 20px;
+    }
+    &-span {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #000000;
+      left: 1px;
+      transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+    }
+  }
+}
+
+.header__menu-span:nth-child(2) {
+  width: 12px;
+}
+.header__menu-span:nth-child(1) {
+  transform: translateY(-10px);
+}
+.header__menu-span:nth-child(3) {
+  transform: translateY(10px);
+}
+.header.open .header__menu-span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+.header.open .header__menu-span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .header__menu-span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+@media only screen and (max-width: 980px) {
+  .header {
+    &__end {
+      &-card {
+        position: fixed;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #e1dbdb;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      &-catalog {
+        display: block;
+      }
+      &-btn {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .header {
+    padding-top: 20px;
+    border-bottom: 2px solid #ddd;
+    &__start {
+      position: absolute;
+      padding: 20px;
+      top: 77px;
+      left: -800px;
+      width: 70%;
+      height: 100vh;
+      bottom: 0;
+      background-color: #cbcaca;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      transition: 0.3s;
+      gap: 50px;
+      &-left {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+        a {
+          color: #000000;
+        }
+      }
+      &-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        &__text {
+          width: 100%;
+          z-index: 222222;
+          color: #ff0000;
+        }
+        &__span {
+          display: none;
+        }
+      }
+    }
+    &__menu {
+      &-burgers {
+        display: block;
+      }
+    }
+  }
+  .header.open .header__start {
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    &__end {
+      justify-content: space-between;
+      &-form {
+        display: none;
+        &__inp {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  .header {
+    &__end {
+      &-logo {
+        img {
+          width: 140px;
+        }
+      }
+      &-card {
+        background-color: #e1dbdb;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 10px;
+        svg {
+          font-size: 20px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      &-catalog {
+        display: block;
+      }
+      &-btn {
+        display: none;
+      }
+    }
+  }
+}

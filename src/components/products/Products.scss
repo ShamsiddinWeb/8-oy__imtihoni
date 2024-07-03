@@ -1,0 +1,107 @@
+.products {
+  margin-bottom: 71px;
+  &__start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    h1 {
+      font-family: Manrope;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 54.64px;
+      text-align: left;
+      color: #454545;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    &-card {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      gap: 20px;
+      border-radius: 25px;
+      border: 2px solid #ddd;
+      &__svg {
+        color: red;
+      }
+      &__img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 150px;
+          height: 250px;
+          object-fit: contain;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        button {
+          position: absolute;
+          right: 11px;
+          top: 11px;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          svg {
+            font-size: 20px;
+          }
+        }
+      }
+      &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 27px 27px 27px;
+        article {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            del {
+              font-family: Manrope;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 13.2px;
+              text-align: left;
+              color: #9f9f9f;
+            }
+            h2 {
+              font-family: Manrope;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 22px;
+              text-align: left;
+              color: #454545;
+            }
+
+          }
+          button {
+            border: none;
+            background: #f90303;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 110px;
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+        a {
+          color: #000000;
+        }
+      }
+    }
+  }
+}

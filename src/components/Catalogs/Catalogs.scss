@@ -1,0 +1,109 @@
+.catalog {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  &__start {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      font-family: Manrope;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 54.64px;
+      text-align: left;
+      color: #454545;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 14px 48px;
+      border: 1px solid #454545;
+      border-radius: 100px;
+      background: transparent;
+      p {
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.86px;
+        text-align: left;
+        color: #454545;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    &-card {
+      display: flex;
+      gap: 46px;
+      padding: 32px;
+      background-color: #f2f2f2;
+      width: 420px;
+      height: 250px;
+      border-radius: 20px;
+      &__img {
+        img {
+          width: 159px;
+          height: 159px;
+          object-fit: contain;
+        }
+      }
+      &__group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+          font-family: Manrope;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 22px;
+          text-align: left;
+          color: #454545;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+          border: none;
+          p {
+            font-family: Manrope;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 15.4px;
+            text-align: left;
+            color: #454545;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .catalog{
+    margin-top: 100px;
+    &__start {
+      flex-direction: column;
+      gap: 0px;
+    }
+    &__wrapper {
+      &-card {
+        width: 250px;
+        gap: 10px;
+        &__img {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+}

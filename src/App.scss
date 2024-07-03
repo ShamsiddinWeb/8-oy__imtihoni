@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Manrope;
+  src: url("../fonts/Manrope/static/Manrope-Regular.ttf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/static/Inter-Regular.ttf");
+}
+.container {
+  max-width: 1341px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.max__container {
+  max-width: 1754px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 48px;
+  border: 1px solid #454545;
+  border-radius: 100px;
+  background: transparent;
+  cursor: pointer;
+  p {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: left;
+    color: #454545;
+  }
+}
+.catalogpage {
+  margin-top: 80px;
+}
+.suspanse {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+.empty {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
