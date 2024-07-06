@@ -4,7 +4,7 @@ import right2 from "../../assets/right2.png";
 import "./Catalogs.scss";
 import { Link } from "react-router-dom";
 
-const Catalogs = ({ catalogItems, Items = true }) => {
+const Catalogs = ({ catalogItems }) => {
   let card = catalogItems.map((el) => (
     <div key={el.id} className="catalog__wrapper-card">
       <div className="catalog__wrapper-card__group">
@@ -25,12 +25,10 @@ const Catalogs = ({ catalogItems, Items = true }) => {
       <div className="container">
         <div className="catalog__start">
           <h1>Каталог</h1>
-          {Items && (
-            <Link to={"/catalog"}>
-              <p>Весь каталог</p>
-              <img src={right} alt="" />
-            </Link>
-          )}
+          <Link to={"/catalog"}>
+            <p>Весь каталог</p>
+            <img src={right} alt="" />
+          </Link>
         </div>
         <div className="catalog__wrapper">{card}</div>
       </div>
