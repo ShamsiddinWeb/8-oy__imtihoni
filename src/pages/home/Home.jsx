@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Catalogs catalogItems={catalog.slice(0, 6)}/>
+      <Catalogs catalogItems={catalog}/>
       <Nornlight/>
       <Brands />
       <Product data={data} isLoading={isLoading} isMarriade={true} />
