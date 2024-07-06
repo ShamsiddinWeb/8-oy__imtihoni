@@ -10,7 +10,7 @@ const CatalogPage = () => {
   }, []);
   return (
     <div className="catalogpage">
-      <Catalogs Item={false} catalogItems={catalog} />
+      <Catalogs catalogItems={catalog} />
     </div>
   );
 };
