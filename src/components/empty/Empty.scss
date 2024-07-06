@@ -1,4 +1,12 @@
 .empty {
   margin-top: 150px;
   margin-bottom: 200px;
+  img {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .empty {
+    margin: 0;
+  }
 }
