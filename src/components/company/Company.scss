@@ -1,5 +1,5 @@
 .company {
-  margin-top: 220px;
+  margin-top: 150px;
   margin-bottom: 100px;
   &__start{
     display: flex;
@@ -77,6 +77,7 @@
 }
 @media (max-width: 580px) {
   .company {
+    margin-top: 100px;
     &__wrapper {
       &-left article {
         width: 100%;

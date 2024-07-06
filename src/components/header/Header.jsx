@@ -37,12 +37,12 @@ const Header = ({ setShow }) => {
       <div className="container">
         <div className="header__start">
           <div className="header__start-left">
-            <Link to={"/company"}>О компании</Link>
-            <Link to={"/payment"}>Доставка и оплата</Link>
-            <Link to={"/return"}>Возврат</Link>
-            <Link to={"/garant"}> Гарантии</Link>
-            <Link to={"/contact"}>Контакты</Link>
-            <Link to={"/blog"}>Блог</Link>
+            <Link onClick={ () => setToggle(false)} to={"/company"}>О компании</Link>
+            <Link onClick={ () => setToggle(false)} to={"/payment"}>Доставка и оплата</Link>
+            <Link onClick={ () => setToggle(false)} to={"/return"}>Возврат</Link>
+            <Link onClick={ () => setToggle(false)} to={"/garant"}> Гарантии</Link>
+            <Link onClick={ () => setToggle(false)} to={"/contact"}>Контакты</Link>
+            <Link onClick={ () => setToggle(false)} to={"/blog"}>Блог</Link>
           </div>
           <div className="header__start-right">
             <p>8 (800) 890-46-56</p>
@@ -81,7 +81,7 @@ const Header = ({ setShow }) => {
             <button
               className="header__menu"
               id="menu-burger"
-              onClick={() => setToggle(!toogle)}
+              onClick={() => setToggle(!toogle) }
             >
               <span className="header__menu-span"></span>
               <span className="header__menu-span"></span>
