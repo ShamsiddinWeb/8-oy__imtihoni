@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import CatalogComponent from "../../components/catalogs/Catalogs";
+import Catalogs from "../../components/catalogs/Catalogs";
 import { catalog } from "../../data/catalogData/CatalogData";
 
 
@@ -10,7 +10,7 @@ const CatalogPage = () => {
   }, []);
   return (
     <div className="catalogpage">
-      <CatalogComponent Item={false} catalogItems={catalog} />
+      <Catalogs Item={false} catalogItems={catalog} />
     </div>
   );
 };
