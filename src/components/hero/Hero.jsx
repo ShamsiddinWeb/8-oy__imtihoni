@@ -10,7 +10,7 @@ import "swiper/css";
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="max__container">
+      <div className="max-container">
         <Swiper
           autoplay={{
             delay: 2000,

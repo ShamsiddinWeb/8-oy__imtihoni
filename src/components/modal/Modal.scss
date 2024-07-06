@@ -10,7 +10,7 @@
 .modal {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 50%;
   height: 534px;
   background-color: #fff;
   position: fixed;
@@ -59,6 +59,29 @@
       font-weight: 500;
       line-height: 21.86px;
       text-align: left;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .modal {
+    h2 {
+      font-family: Manrope;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 40.4px;
+      text-align: left;
+      color: #454545;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .modal {
+    width: 90%;
+    h2 {
+      font-family: Manrope;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30.4px;
     }
   }
 }

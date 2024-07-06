@@ -12,7 +12,7 @@ const Brands = () => {
     <div className="brands">
       <div className="container">
         <div className="brands__card">
-          <h1>Только проверенные бренды</h1>
+          <h3>Только проверенные бренды</h3>
           <div>
             <button>
               <img src={left} alt="" />

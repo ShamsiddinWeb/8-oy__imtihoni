@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/video.gif";
+import "./SuspanseLoading.scss"
 const SuspanseLoading = () => {
   return (
     <div className="suspanse">

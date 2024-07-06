@@ -1,0 +1,77 @@
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #454545;
+  color: #fff;
+  padding: 30px 16px;
+  overflow: hidden;
+  &__collection {
+    margin: 50px 0;
+  }
+  &__item {
+    list-style: none;
+    span {
+      font-family: Manrope;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24.59px;
+      text-align: left;
+    }
+  }
+
+  &__logo,
+  &__link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    margin: 6px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-wrap: nowrap;
+    h2 {
+      font-family: Manrope;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 38.25px;
+      text-align: left;
+    }
+    svg {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      min-width: 26px;
+    }
+  }
+  &__logo {
+    margin-top: -10px;
+  }
+  &__link.active {
+    background: #fff8;
+    color: #000;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    background-color: transparent;
+  }
+}
+.sidebar__btn {
+  // margin-top: 500px;
+  color: #fff;
+  button {
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}

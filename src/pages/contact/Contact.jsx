@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import line from "../../assets/line.png";
 import "./Contact.scss";
 import Kontact from "../../components/kontect/Kontact";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="contact__wrapper">

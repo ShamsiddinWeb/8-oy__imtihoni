@@ -1,5 +1,5 @@
 .detailComponent__wrapper {
-  margin-top: 200px;
+  margin-top: 150px;
   .line {
     display: flex;
     align-items: center;
@@ -20,7 +20,8 @@
     // flex-wrap: wrap;
     width: 100%;
     .detailComponent__img {
-      width: 50%;
+      // width: 50%;
+      margin: 0;
       img {
         width: 500px;
         height: 500px;
@@ -161,7 +162,7 @@
     }
   }
   .specification__section {
-    margin-top: 180px;
+    margin-top: 120px;
     margin-bottom: 85px;
     .specification__title {
       margin-bottom: 23px;
@@ -177,6 +178,9 @@
     .specification__items {
       display: flex;
       flex-direction: column;
+      .item__bg {
+        background-color: #f8f8f8;
+      }
       article {
         padding: 28px 24px;
         display: flex;
@@ -205,6 +209,9 @@
       }
     }
   }
+}
+.bir {
+  background-color: #e5e5e5;
 }
 @media (max-width: 1000px) {
   .detailComponent__wrapper {

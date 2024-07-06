@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import line from "../../assets/line.png";
 import "./Delivery.scss";
 
-const DeliveryComponent = () => {
+const Delivery = () => {
   return (
     <div className="delivery">
       <div className="container">
@@ -46,4 +46,4 @@ const DeliveryComponent = () => {
   );
 };
 
-export default DeliveryComponent;
+export default Delivery;

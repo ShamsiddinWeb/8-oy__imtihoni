@@ -50,9 +50,16 @@
 }
 @media (max-width: 440px) {
   .brands {
+    &__wrapper {
+      span {
+        img {
+          width: 150px;
+        }
+      }
+    }
     &__card {
-      h1 {
-        width: 100px;
+      h3 {
+        font-size: 24px;
       }
       div {
         display: none;

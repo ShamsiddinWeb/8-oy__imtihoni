@@ -1,0 +1,52 @@
+.create__form {
+  display: grid;
+  grid-template-columns: auto;
+  font-family: Manrope;
+  width: 620px;
+  padding: 22px;
+  gap: 16px;
+  &__title {
+    color: #454545;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30.8px;
+  }
+  button {
+    padding: 10px;
+    color: #fff;
+    background-color: red;
+    border: none;
+  }
+  &__inputs {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 16px;
+    &__text {
+      color: #454545;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 19.68px;
+    }
+    &__input {
+      width: 100%;
+      height: 50px;
+      text-indent: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    textarea {
+      resize: none;
+      padding: 10px 0;
+      // height: 164px;
+    }
+    &__select {
+      padding: 16px 0;
+      text-indent: 16px;
+      color: #454545;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+    }
+  }
+}

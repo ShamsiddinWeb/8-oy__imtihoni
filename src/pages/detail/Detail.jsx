@@ -1,10 +1,13 @@
-import React from "react";
-import DetailComponent from "../../components/detailComponent/DetailComponent";
+import React, {useEffect} from "react";
+import Details from "../../components/details/Details";
 
 const Detail = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <DetailComponent />
+      <Details/>
     </>
   );
 };

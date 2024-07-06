@@ -1,0 +1,43 @@
+.skeleton {
+  margin-bottom: 71px;
+  &__cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 60px;
+    .skeleton__card {
+      max-width: 280px;
+      &__img {
+        width: 200px;
+        height: 220px;
+        background: rgba(128, 128, 128, 0.411);
+        border-radius: 30px;
+        margin-bottom: 10px;
+      }
+      &__content {
+        padding: 0 20px;
+        &__title {
+          width: 100px;
+          height: 15px;
+          background: rgba(128, 128, 128, 0.411);
+          margin-bottom: 10px;
+        }
+        &__box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &__price {
+            width: 50px;
+            height: 15px;
+            background: rgba(128, 128, 128, 0.411);
+          }
+          &__btn {
+            width: 54px;
+            height: 33px;
+            border-radius: 40px;
+            background: rgba(128, 128, 128, 0.411);
+          }
+        }
+      }
+    }
+  }
+}

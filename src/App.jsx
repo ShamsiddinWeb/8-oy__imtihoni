@@ -15,13 +15,23 @@ import Modal from "./components/modal/Modal";
 import Request from "./components/request/Request";
 import { useState } from "react";
 import Detail from "./pages/detail/Detail";
+import Cart from "./pages/Cart/Cart";
+import Auth from "./pages/auth/Auth";
+import Admin from "./pages/admin/Admin";
+import Login from "./pages/login/Login";
+import CreateProduct from "./pages/admin/createProduct/CreateProduct";
+import ManageProduct from "./pages/admin/manageProduct/ManageProduct";
+import CreateCategory from "./pages/admin/createCategory/CreateCategory";
+import ManageCategory from "./pages/admin/manageCategory/ManageCategory";
 
 
 function App() {
   const [show, setShow] = useState(false);
+  const isAdminPath = (pathname) => pathname.includes("/admin");
   return (
     <>
-      <Header setShow={setShow} />
+      {!isAdminPath(window.location.pathname) && <Header setShow={setShow} />}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/company" element={<About />} />
@@ -33,6 +43,16 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/products/:id" element={<Detail />} />
+        <Route path="/basket" element={<Cart />} />
+        <Route path="login" element={<Login />} />
+        <Route path="/" element={<Auth />}>
+          <Route path="/admin" element={<Admin />}>
+            <Route path="create-product" element={<CreateProduct />} />
+            <Route path="manage-product" element={<ManageProduct />} />
+            <Route path="create-category" element={<CreateCategory />} />
+            <Route path="manage-category" element={<ManageCategory/>} />
+          </Route>
+        </Route>
       </Routes>
       {show ? (
         <Modal setShow={setShow}>
@@ -41,7 +61,7 @@ function App() {
       ) : (
         <></>
       )}
-      <Footer />
+      {!isAdminPath(window.location.pathname) && <Footer />}
     </>
   );
 }

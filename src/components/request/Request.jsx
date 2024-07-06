@@ -1,5 +1,5 @@
 import React from "react";
-import "../../components/modal/Modal.scss"
+import "../../components/modal/Modal.scss";
 import { GoArrowRight } from "react-icons/go";
 
 const Request = () => {

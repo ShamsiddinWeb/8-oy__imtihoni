@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import right from "../../assets/line.png";
 import { Link } from "react-router-dom";
 
 import "./Return.scss";
 
 const Return = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="return">
       <div className="container">

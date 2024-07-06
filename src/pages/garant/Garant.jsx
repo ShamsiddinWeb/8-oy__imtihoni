@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import line from "../../assets/line.png";
 import "./Garant.scss";
 const Garant = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="garant">
       <div className="container">

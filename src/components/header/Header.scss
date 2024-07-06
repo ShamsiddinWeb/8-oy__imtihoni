@@ -113,6 +113,9 @@
       gap: 31px;
       &__favorites {
         color: black;
+        position: relative;
+        text-align: center;
+        flex-direction: column;
       }
       &__group {
         display: flex;
@@ -142,18 +145,46 @@
       gap: 6px;
       display: none;
       cursor: pointer;
-      p {
-        font-family: Manrope;
-        font-size: 12px;
-        font-weight: 600;
-        line-height: 16.39px;
-        text-align: left;
-        color: #454545;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        position: relative;
+        p {
+          font-family: Manrope;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 16.39px;
+          text-align: left;
+          color: #454545;
+        }
+        svg {
+          font-size: 25px;
+          margin-left: 6px;
+        }
       }
-      svg {
-        font-size: 25px;
-        margin-left: 6px;
-      }
+    }
+    &-count {
+      position: absolute;
+      background-color: #c63c3c;
+      padding: 1px 5px;
+      color: #fff;
+      top: -5px;
+      right: 9px;
+      border-radius: 50%;
+      font-size: 12px;
+    }
+    &-count1 {
+      position: absolute;
+      background-color: #c63c3c;
+      padding: 1px 5px;
+      color: #fff;
+      top: -5px;
+      right: 18px;
+      border-radius: 50%;
+      font-size: 12px;
     }
   }
   &__menu {
@@ -227,7 +258,7 @@
     &__start {
       position: absolute;
       padding: 20px;
-      top: 77px;
+      top: 101px;
       left: -800px;
       width: 70%;
       height: 100vh;
@@ -272,6 +303,9 @@
 }
 @media only screen and (max-width: 600px) {
   .header {
+    &__start {
+      top: 75px;
+    }
     &__end {
       justify-content: space-between;
       &-form {

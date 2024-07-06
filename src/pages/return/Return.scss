@@ -1,5 +1,5 @@
 .return {
-  margin-top: 220px;
+  margin-top: 150px;
   margin-bottom: 127px;
   &__start {
     display: flex;
@@ -72,5 +72,10 @@
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .return {
+    margin-top: 100px;
   }
 }

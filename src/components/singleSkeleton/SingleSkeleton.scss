@@ -1,0 +1,69 @@
+.single-skeleton {
+  margin-bottom: 181px;
+  .single__style {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    &__img {
+      width: 500px !important;
+      height: 600px;
+      background: rgba(128, 128, 128, 0.411);
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: auto;
+      padding: 30px 0;
+      width: 595px;
+      gap: 40px;
+      &__text {
+        width: 100%;
+        height: 80px;
+        background: rgba(128, 128, 128, 0.411);
+      }
+      ul {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 12px;
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span {
+            &:first-child {
+              width: 36px;
+              height: 22px;
+              background: rgba(128, 128, 128, 0.411);
+            }
+            &:nth-child(2) {
+              width: 444px;
+              height: 22px;
+              background: rgba(128, 128, 128, 0.411);
+            }
+            &:last-child {
+              width: 88px;
+              height: 22px;
+              background: rgba(128, 128, 128, 0.411);
+            }
+          }
+        }
+      }
+      &__price {
+        width: 120px;
+        height: 44px;
+        background: rgba(128, 128, 128, 0.411);
+      }
+      &__par {
+        width: 100%;
+        height: 84px;
+        background: rgba(128, 128, 128, 0.411);
+      }
+      &__btn {
+        width: 123px;
+        height: 52px;
+        background: rgba(128, 128, 128, 0.411);
+        border-radius: 15px;
+      }
+    }
+  }
+}

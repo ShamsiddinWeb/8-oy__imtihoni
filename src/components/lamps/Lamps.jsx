@@ -5,9 +5,9 @@ const Lamps = () => {
     <div className="lamps">
       <div className="container">
         <div className="lamps__start">
-          <h1>
+          <h4>
             Производство <br /> светильников
-          </h1>
+          </h4>
           <div>
             <p>
               Интернет-магазин NORNLIGHT предлагает широкий ассортимент
